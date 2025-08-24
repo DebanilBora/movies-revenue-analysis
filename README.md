@@ -1,39 +1,92 @@
-📂 Project Overview
+🎬 Movie Budget vs Revenue Analysis
 
-The script performs the following steps:
+A data science project analyzing the relationship between film production budgets and worldwide revenue using pandas, seaborn, matplotlib, and scikit-learn.
 
-Data Exploration
+This project explores how movie budgets impact box office success across decades, including data cleaning, visualization, and predictive modeling.
 
-Loads the dataset (cost_revenue_dirty.csv).
+🚀 Features
 
-Inspects shape, info, and missing values.
+✅ Data Cleaning
 
-Detects and removes duplicates.
+Removed NaN values, duplicates, and formatted currency fields.
 
-Data Cleaning
+Converted Release_Date into datetime format.
 
-Cleans currency columns (USD_Production_Budget, USD_Worldwide_Gross, USD_Domestic_Gross).
+✅ Exploratory Data Analysis (EDA)
 
-Converts Release_Date to datetime.
+Identified international-only releases.
 
-Removes unreleased and international-only films.
+Highlighted unreleased future films.
 
-Insights & Filtering
+Calculated the % of films that lost money.
 
-Identifies films that lost money.
+✅ Data Visualization
 
-Splits films into old (≤1960s) and new (>1960s) for comparison.
+Bubble chart showing budgets vs worldwide revenue over time.
 
-Visualizations
+Regression plots for old films (≤1960s) and modern films (>1960s).
 
-Bubble Chart: Budgets over time with revenue scaling.
+✅ Machine Learning
 
-Regression Plots: Budget vs revenue for old and new films.
+Linear regression model to predict revenue based on budget.
 
-Linear Regression (Scikit-learn)
+Computed slope, intercept, R² score, and revenue predictions for a hypothetical budget.
 
-Fits regression models for old and new films.
+📊 Sample Insights
 
-Evaluates slope, intercept, and R² score.
+📌 % of films that failed to break even.
 
-Predicts expected revenue for a given budget (e.g., $350M).
+📌 Most expensive films before 1960.
+
+📌 Regression comparison between old vs. modern films.
+
+📌 Predicted revenue for a $350M production.
+
+🛠️ Tech Stack
+
+Python 🐍
+
+pandas – Data cleaning & manipulation
+
+seaborn & matplotlib – Data visualization
+
+scikit-learn – Linear regression modeling
+
+📂 Dataset
+
+The analysis is based on cost_revenue_dirty.csv, which includes:
+
+USD_Production_Budget
+
+USD_Worldwide_Gross
+
+USD_Domestic_Gross
+
+Release_Date
+
+▶️ How to Run
+
+Clone this repo:
+
+git clone https://github.com/DebanilBora/movies-revenue-analysis.git
+cd movie-budget-revenue-analysis
+
+
+Install dependencies:
+
+pip install pandas seaborn matplotlib scikit-learn
+
+
+Run the script:
+
+python main.py
+
+📌 Example Visualizations
+
+Bubble chart of film budgets over time.
+
+Regression line comparing budget vs revenue for old and new films.
+
+🔖 Tags
+
+#DataScience #MachineLearning #LinearRegression #Movies #Visualization
